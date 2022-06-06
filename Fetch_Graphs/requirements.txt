@@ -1,0 +1,5 @@
+plotly==4.5.4
+redis==3.4.1
+requests==2.23.0
+selenium==3.141.0
+datetime
