@@ -8,7 +8,7 @@ testdata = [{'country': 'UK', 'total': 124743, 'new': 4676, 'total_death': 16509
             {'country': 'USA', 'total': 777854, 'new': 13218, 'total_death': 41397, 'new_death': 822,
              'recovered': 71770}]
 
-API_ADDR = "http://35.189.101.119:5000/api/corona/v1.0/all"
+API_ADDR = ""  # replace the api address
 
 class VirusGraphic():
     def barchar(self, virus_data):
@@ -47,15 +47,12 @@ class VirusGraphic():
         )
 
         fig.write_html('./figures/'+str(datetime.datetime.now().date())+'.html', auto_open=True)
+        # fig.write_html('test.html')
 
 
 if __name__ == '__main__':
     r = requests.get(API_ADDR)
 
-    # print(r.text)
-
     jsondata = json.loads(str(r.text))
-
-    # print(jsondata[1])
 
     VirusGraphic().barchar(jsondata)

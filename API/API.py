@@ -3,8 +3,7 @@
 from flask import Flask, jsonify
 from DataDriver.DataDrive import DataDrive
 
-datapool = DataDrive('35.189.101.119', '6350', 'er7886$')
-# datapool = DataDrive('0.0.0.0', '6379')
+datapool = DataDrive('0.0.0.0', '6379')  # replace your data pool address
 app = Flask(__name__)
 
 

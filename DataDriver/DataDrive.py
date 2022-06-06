@@ -82,14 +82,3 @@ class DataDrive():
         for key in self.datapool.scan_iter("*"):
             self.datapool.delete(key)
 
-
-if __name__ == '__main__':
-    # driver = DataDrive('35.189.101.119', '6379')
-    # driver.rm()
-    driver.ls()
-    # print(driver.lookup('2020-04-24',''))
-
-    # print(driver.dataoftoday())
-    #
-    # listofday = driver.lookup('2020-04-24', '')
-    # print(listofday)
