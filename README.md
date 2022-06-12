@@ -17,17 +17,17 @@ An example with the endpoint '/api/corona/v1.0/all':
 
 ## Endpoints
 The API has 3 endpoints now:
-```python
+```bash
 /
 ```
 the root endpoint gives endpoints status in general, including health and reachability.
 
-```python
+```bash
 /api/corona/v1.0/all
 ```
 gives all data in a json format
 
-```python
+```bash
 /api/corona/v1.0/date=<string:date>&id=<string:country_name>
 ```
 gives data for a specific region
