@@ -22,20 +22,11 @@ class DataDrive():
         if number == "":
             return number
 
-        # decode
-        # number = number.decode('UTF-8')
-
-        # print(number)
-
         if number[0] == '+':
             number = number[1:]
 
         while (',' in number):
             number = number.replace(',', '')
-
-            # if number[offset] == ',':
-            #     number = number[0:-4] + number[-2:]
-            #     offset = offset *2
 
         # first make sure its a number
         if not number.isnumeric():
