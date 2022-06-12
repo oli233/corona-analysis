@@ -23,9 +23,6 @@ class VirusGraphic():
 
         # collect go bar data
         for country in virus_data:
-            # country_names.append(country['country'])
-            # bar = go.Bar(name=country['country'], x=country_names,
-            #              y=[country['total'], country['total_death'], country['new_death']])
 
             recovered_values.append(country['new_death'])
             total_values.append(country['total'])
