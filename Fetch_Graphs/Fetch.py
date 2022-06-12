@@ -48,8 +48,6 @@ class Fetch():
             except:
                 p = False
 
-        # table = self.wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "tbody")))
-
         trs = browser.find_elements_by_tag_name("tr")
 
         # data pool
